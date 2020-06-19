@@ -5,40 +5,30 @@ public class SelectionSort {
 
     public static void main(String[] args) {
 
-        int[] str = {20, 1, 5, 3, 8, 12, 40, 24, 4, 3, 2, 5, 7,23, 3, 5, 6, 7};
+        int[] arr = {20, 1, 5, 3, 8, 12, 40, 24, 4, 3, 2, 5, 7,23, 3, 5, 6, 7};
 
-        for (int i = 0; i < str.length - 1; ++i) {
+        sort(arr);
+
+        aCommonModel.printStr(arr);
+    }
+
+    public static void sort(int[] arr) {
+
+        for (int i = 0; i < arr.length - 1; ++i) {
 
             int minPos = i;
 
-            for (int j = i + 1; j < str.length; ++j) {
+            for (int j = i + 1; j < arr.length; ++j) {
 
-                if (str[j] < str[minPos]) {
+                if (arr[j] < arr[minPos]) {
                     minPos = j;
                 }
 
             }
 
-            swap(str, i, minPos);
-        }
-
-        printStr(str);
-
-    }
-
-    static void printStr(int[] str) {
-
-        for (int value : str) {
-            System.out.print(value + "  ");
+            aCommonModel.swap(arr, i, minPos);
         }
 
     }
 
-    static void swap(int[] str, int a, int b) {
-
-        int tmp = str[a];
-        str[a] = str[b];
-        str[b] = tmp;
-
-    }
 }
