@@ -1,4 +1,4 @@
-package site.abookworm.base_ma;
+package site.abookworm.sort_base;
 
 public class BubbleSort {
 
