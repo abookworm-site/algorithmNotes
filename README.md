@@ -1,6 +1,6 @@
 # Algorithm Notes
 
-Here is for my algorithm learning to do some notes.
+Here is for my algorithm learning notes.
 
 
 
